@@ -1,0 +1,94 @@
+/*general navigation bar styling*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    background: deepskyblue;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+/*targeting esigned logo styling*/
+nav .logo{
+    text-align: left;
+    margin-right: 450px;
+    color: black;
+}
+/*targeting the unordered list styling*/
+nav ul{
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-left: 30px;
+    /*align-items: center;*/
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: black;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    background-color: #000000;
+    color: #f0f0f0;
+    border-radius: 5px;
+    width: 50px;
+    padding: 5px;
+}
+/*targeting icons styling*/
+nav .icons{
+    display: flex;
+    /*justify-content: space-between;*/
+    color: black;
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+.icons .user{
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons .search{
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.scrolling-background {
+    position: relative;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    animation: scroll 15s linear infinite; /* Adjust duration for speed */
+}
+
+.bg-image {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1 { background-image: url('https://cdn.pixabay.com/photo/2018/03/13/11/39/fruit-3222313_1280.jpg'); }
+.img2 { background-image: url('https://cdn.pixabay.com/photo/2020/12/13/13/30/cinnamon-sticks-5828241_1280.jpg'); }
+.img3 { background-image: url('https://cdn.pixabay.com/photo/2023/04/24/16/50/cake-7948556_1280.jpg'); }
+.img4 { background-image: url('https://cdn.pixabay.com/photo/2018/03/13/11/39/fruit-3222313_1280.jpg'); }
+
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}

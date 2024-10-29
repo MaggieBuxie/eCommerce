@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>This is About Page</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis ducimus esse excepturi impedit itaque optio, pariatur repudiandae veniam voluptates!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus error eum magni modi quas quo sequi voluptatem! Ducimus, fugit tenetur.</p>
+    {% if messages %}
+    <div>
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{message}}
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+<div class="row">
+    <div class="col-md-5 bg-dark-subtle">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-dark">ADD CUSTOMER</button>
+        </form>
+    </div>
+    <div class="col-md-7"></div>
+
+</div>
+{% endblock %}
